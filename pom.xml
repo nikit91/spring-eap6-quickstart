@@ -95,46 +95,6 @@
 			<version>1.6.2</version>
 		</dependency>
 
-        <!-- Import the JPA API using the provided scope It is included in JBoss
-            AS 7 / EAP 6 -->
-        <dependency>
-            <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.0-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-	    <!-- JSR-303 (Bean Validation) Implementation -->
-	    <!-- Provides portable constraints such as @Email -->
-	    <!-- Hibernate Validator is shipped in JBoss AS 7 -->
-	    <dependency>
-    		<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>4.1.0.Final</version>
-    		<scope>provided</scope>
-    		<exclusions>
-      			<exclusion>
-          			<groupId>org.slf4j</groupId>
-          			<artifactId>slf4j-api</artifactId>
-        		</exclusion>
-      		</exclusions>
-		</dependency>
-
-	    <!-- Annotation processor that raising compilation errors whenever 
-	        constraint annotations are incorrectly used. -->
-	    <dependency>
-			<groupId>org.hibernate</groupId>
-      		<artifactId>hibernate-validator-annotation-processor</artifactId>
-      		<version>4.1.0.Final</version>
-      		<scope>provided</scope>
-		</dependency>
-
-	    <dependency>
-	    	<groupId>org.hibernate</groupId>
-	    	<artifactId>hibernate-entitymanager</artifactId>
-	    	<version>4.1.0.Final</version>
-	    	<scope>provided</scope>
-	    </dependency>
-
         <!-- Other community dependencies -->
         <dependency>
             <groupId>aopalliance</groupId>
@@ -167,12 +127,7 @@
 		</dependency>
 
 		<!-- Add H2 dependency for embedded testing database -->
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<version>1.3.165</version>
-			<scope>provided</scope>
-		</dependency>
+
 
 		<!-- Add JSON dependency, specified in jboss-deployment-structure.xml -->
 	    <dependency>
