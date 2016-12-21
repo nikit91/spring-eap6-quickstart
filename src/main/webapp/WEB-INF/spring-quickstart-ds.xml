@@ -8,4 +8,3 @@
    <!-- The datasource is bound into JNDI at this location. We reference 
       this in META-INF/persistence.xml -->
 </datasources>
- 
